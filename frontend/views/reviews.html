@@ -1,0 +1,97 @@
+<section id="reviews" class="container py-5">
+    <h2 style="text-align:center; margin-bottom: 8px;">Product Reviews</h2>
+    <p class="subtle" style="text-align:center; margin-bottom:24px;">Read what players think and leave your own review.</p>
+  
+    <div style="max-width: 700px; margin: 0 auto 16px;">
+        <div class="card" style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap; text-align:center;">
+          <div style="font-weight:700; font-size:1.1rem;">Average Rating</div>
+          <div aria-label="average rating" title="Average rating" style="font-weight:700;">
+            ⭐⭐⭐⭐☆ <span style="color:#6b7280; font-weight:600; margin-left:6px;">4.2 / 5</span>
+          </div>
+          <div style="color:#6b7280;">(128 reviews)</div>
+        </div>
+      </div>
+      
+  
+    <div id="reviews-list" class="grid">
+      <article class="card">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <div style="font-weight:700;">Pro Carbon Stick</div>
+            <div style="color:#6b7280; font-size:.9rem;">by <strong>Amir K.</strong> • 2 days ago</div>
+          </div>
+          <div title="5 out of 5">⭐⭐⭐⭐⭐</div>
+        </div>
+        <p style="margin:.6rem 0 0;">Light, great puck feel, and the shot pops. Tape lasted longer than my last stick too.</p>
+      </article>
+  
+      <article class="card">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <div style="font-weight:700;">Elite Skates</div>
+            <div style="color:#6b7280; font-size:.9rem;">by <strong>Nina S.</strong> • 1 week ago</div>
+          </div>
+          <div title="4 out of 5">⭐⭐⭐⭐☆</div>
+        </div>
+        <p style="margin:.6rem 0 0;">Super comfy after heat molding. Edges hold well—great value.</p>
+      </article>
+  
+      <article class="card">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div>
+            <div style="font-weight:700;">Impact-Pro Helmet</div>
+            <div style="color:#6b7280; font-size:.9rem;">by <strong>Leo V.</strong> • 3 weeks ago</div>
+          </div>
+          <div title="3 out of 5">⭐⭐⭐☆☆</div>
+        </div>
+        <p style="margin:.6rem 0 0;">Good airflow, fit was a bit tight at first but broke in nicely.</p>
+      </article>
+    </div>
+  
+    <div style="height:1px; background:#eee; margin:28px 0;"></div>
+  
+    <div class="card">
+      <h3 style="margin:0 0 10px;">Leave a review</h3>
+      <form id="review-form" class="form-grid">
+        <label for="rev-product">Product</label>
+        <select id="rev-product" required style="padding:.7rem .9rem; border-radius:10px; border:1px solid #e7e7ea;">
+          <option value="" selected disabled>Select a product</option>
+          <option value="pro-carbon-stick">Pro Carbon Stick</option>
+          <option value="elite-skates">Elite Skates</option>
+          <option value="impact-pro-helmet">Impact-Pro Helmet</option>
+          <option value="defender-pads">Defender Pads</option>
+        </select>
+  
+        <label>Rating</label>
+        <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+          <label><input type="radio" name="rating" value="5" required> ⭐⭐⭐⭐⭐</label>
+          <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐☆</label>
+          <label><input type="radio" name="rating" value="3"> ⭐⭐⭐☆☆</label>
+          <label><input type="radio" name="rating" value="2"> ⭐⭐☆☆☆</label>
+          <label><input type="radio" name="rating" value="1"> ⭐☆☆☆☆</label>
+        </div>
+  
+        <label for="rev-title">Title (optional)</label>
+        <input id="rev-title" type="text" placeholder="Great feel and balance" />
+  
+        <label for="rev-body">Your review</label>
+        <textarea id="rev-body" rows="4" placeholder="Share details about fit, protection, durability, etc." style="border:1px solid #e7e7ea; border-radius:10px; padding:12px 14px;"></textarea>
+  
+        <div class="form-grid" style="grid-template-columns: 1fr 1fr; gap:10px;">
+          <div>
+            <label for="rev-name">Name</label>
+            <input id="rev-name" type="text" placeholder="Your name" />
+          </div>
+          <div>
+            <label for="rev-email">Email (not shown)</label>
+            <input id="rev-email" type="email" placeholder="you@example.com" />
+          </div>
+        </div>
+  
+        <div class="form-actions">
+          <button class="btn-primary" type="submit">Submit review</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
